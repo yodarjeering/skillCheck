@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>String guessing game</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+<!-- bootstrapを用いた -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container">   
+    <div id="title" class="mt-5 alert alert-primary" role="alert">
+      <h2 style="text-align:center">文字列あてゲーム！</h2>
+    </div> 
+    <div id="tutorial">
+      <h3>説明</h3>
+      <p style="line-height:2rem ">
+        文字列あてゲームはヒントをもとに4文字のランダム半角英小文字を推測するゲームです！<br>
+        文字列に同じ文字は出てきません。
+        解答権は20回です。<br>
+        以下のようなヒントをもとに正解を導きましょう！ <br>
+        <div id="example1" class="w-55 alert alert-primary mt-4" role="alert">
+          <h5 >正解が「they」で推測した文字列が「play」だった場合</h5>
+        </div> 
+        <p style="text-indent: 2em">文字「y」が正解と推測語で同じ位置で使われているため 1 eat 0 bite と表示されます。</p>
+        <br>
+        <div id="example2" class="w-55 alert alert-primary mt-4" role="alert">
+          <h5 >正解が「they」で推測した文字列が「year」だった場合</h5>
+        </div> 
+        <p style="text-indent: 2em">文字「e」と「y」が正解と推測語で使われているため 0 eat 2 bite と表示されます。</p>
+        <div id="example3" class="w-55 alert alert-secondary mt-5" role="alert">
+          <h5 >称号</h5>
+        </div> 
+        <div style="text-indent: 2em">
+          <p>マスター :  5回以内の解答でゲームクリア</p>
+          <p>ゴールド : 10回以内の解答でゲームクリア</p>
+          <p>シルバー : 15回以内の解答でゲームクリア</p>
+          <p>ブロンズ : 20回以内の解答でゲームクリア</p>
+        </div>
+      </p>
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mt-3" onclick="location.href='game.html'">ゲーム開始</button>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
